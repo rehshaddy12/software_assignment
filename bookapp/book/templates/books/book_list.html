@@ -1,10 +1,16 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<article class="">
-  <ul>
-    {% for book in books %}
-    <li>{{ book.title }} by {{ book.author }} {{ book.published_date }}</li>
-  </ul>
-</article>
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <article class="">
+      <ul>
+        {% for book in books %}
+        <li>{{ book.title }} by {{ book.author }} {{ book.published_date }}</li>
+      </ul>
+        {% endfor %}
+    </article>
+  </body>
+</html>
